@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "railgun_fishing_rod:item/railgun_fishing_rod"
+  }
+}

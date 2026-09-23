@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "railgun_fishing_rod",
+  "version": "${version}",
+  "name": "Railgun Fishing Rod",
+  "description": "A tiny Fabric 1.21.11 mod that turns a special fishing rod into an instant hitscan railgun.",
+  "authors": ["OpenAI"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.railgunfishingrod.RailgunFishingRodMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
