@@ -61,7 +61,7 @@ src/main/java/com/example/railgunfishingrod/RailgunConfig.java
 克隆项目后进入项目目录：
 
 ```bash
-git clone https://github.com/你的用户名/railgun-fishing-rod.git
+git clone https://github.com/tianyu219/railgun-fishing-rod.git
 cd railgun-fishing-rod
 ```
 
