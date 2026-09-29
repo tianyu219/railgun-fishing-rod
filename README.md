@@ -33,8 +33,8 @@ src/main/java/com/example/railgunfishingrod/RailgunConfig.java
 | `EXPLOSION_RADIUS` | 爆炸范围            |
 | `EXPLOSION_DAMAGE` | 爆炸对受影响实体造成的固定伤害 |
 | `BREAK_BLOCKS`     | 是否破坏方块          |
-| `ARC_SAMPLES`      | 电弧轨迹采样点数量       |
-| `ARC_JITTER`       | 电弧摆动幅度          |
+| `ARC_SAMPLES`      | 轨迹采样点数量       |
+| `ARC_JITTER`       | 摆动幅度          |
 
 ## 获取物品
 
