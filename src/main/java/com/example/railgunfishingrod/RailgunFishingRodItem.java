@@ -12,7 +12,7 @@ import net.minecraft.world.item.FishingRodItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.ClipContext;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
@@ -78,7 +78,7 @@ public final class RailgunFishingRodItem extends FishingRodItem {
                 end,
                 searchBox,
                 entityFilter,
-                RailgunConfig.MAX_RANGE
+                (float) RailgunConfig.MAX_RANGE
         );
 
         Vec3 impact = blockHitPos;
@@ -129,8 +129,7 @@ public final class RailgunFishingRodItem extends FishingRodItem {
         Vec3 side = forward.cross(reference).normalize();
         Vec3 up = forward.cross(side).normalize();
 
-        // Bright muzzle flash.
-        level.sendParticles(ParticleTypes.FLASH, start.x, start.y, start.z, 1, 0, 0, 0, 0);
+        // Electric muzzle effect.
         level.sendParticles(ParticleTypes.ELECTRIC_SPARK, start.x, start.y, start.z, 12, 0.08D, 0.08D, 0.08D, 0.05D);
 
         // A jagged, instant electrical tracer between the player and the hit point.
@@ -147,10 +146,8 @@ public final class RailgunFishingRodItem extends FishingRodItem {
             level.sendParticles(ParticleTypes.ELECTRIC_SPARK, point.x, point.y, point.z, 2, 0.01D, 0.01D, 0.01D, 0.0D);
         }
 
-        // Stronger impact flash/electric burst.
-        level.sendParticles(ParticleTypes.FLASH, end.x, end.y, end.z, 1, 0, 0, 0, 0);
+        // Stronger impact electric burst.
         level.sendParticles(ParticleTypes.ELECTRIC_SPARK, end.x, end.y, end.z, 24, 0.18D, 0.18D, 0.18D, 0.12D);
         level.playSound(null, end.x, end.y, end.z, SoundEvents.LIGHTNING_BOLT_IMPACT, SoundSource.PLAYERS, 1.0F, 1.8F);
     }
-
 }
