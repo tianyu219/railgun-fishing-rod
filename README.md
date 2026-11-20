@@ -54,7 +54,7 @@ src/main/java/com/example/railgunfishingrod/RailgunConfig.java
 * Fabric API 0.141.4+1.21.11
 * Fabric Loom 1.14.10
 
-项目使用 Fabric 1.21.11 对应的 Mojang mappings。
+项目使用 Fabric 1.21.11 对应的 Mojang mappings
 
 ## 构建
 
