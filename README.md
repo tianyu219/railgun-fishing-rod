@@ -1,10 +1,10 @@
 # Railgun Fishing Rod
 
-一个极简的 **Minecraft Fabric 1.21.11** 模组。
+一个极简的 **Minecraft Fabric 1.21.11** 模组
 
-玩家手持特殊钓鱼竿右键，即可沿准星方向瞬时发射一发高速“轨道炮”。
+玩家手持特殊钓鱼竿右键，即可沿准星方向瞬时发射一发高速炮
 
-没有 GUI、能源、弹药或机器。
+没有 GUI、能源、弹药或机器
 
 ## 功能
 
@@ -38,7 +38,7 @@ src/main/java/com/example/railgunfishingrod/RailgunConfig.java
 
 ## 获取物品
 
-在开发环境中，可以从创造模式的“工具与实用物品”标签页获取。
+在开发环境中，可以从创造模式的“工具与实用物品”标签页获取
 
 也可以使用：
 
@@ -105,9 +105,9 @@ build/libs/
 mods
 ```
 
-目录。
+目录
 
-客户端和服务端都需要安装本模组以及对应版本的 Fabric API。
+客户端和服务端都需要安装本模组以及对应版本的 Fabric API
 
 ## 项目结构
 
